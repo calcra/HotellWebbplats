@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Defective Towers Hotel - Välkommen</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html"><img src="bild/logosmall.png" alt="small logo" width="60" height="19"></a>
+    <a href="boka.html">Boka</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakta.html">Kontakta</a>
+    <a href="servicemat.html">Service & Mat</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <img src="bild/trappor.jpg" alt="Trappor" style="width:100%">
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="bokaform">
+    <form action="action_page.php">
+
+      <label for="fname">Ditt Namn</label>
+      <input type="text" id="fname" name="firstname" placeholder="Boaty McBoatFace">
+
+      <label for="epost">Ditt E-post</label>
+      <input type="text" id="epost" name="epost" placeholder="exempel@email.com">
+
+      <label for="rumtyp">Välj typ av Rum</label>
+      <select name="rumtyp" id="rumtyp" style="color: #444444;">
+    <option value="">--Vänligen välj ett typ rum--</option>
+    <option value="dog">Enkelrum [399kr/natt]</option>
+    <option value="cat">Dubbelrumm [599kr/natt]</option>
+    </select>
+
+      <label for="datum1">Start</label>
+      <input type="date" id="datum1" name="datum1" style="margin-right:10%">
+
+      <label for="datum2">Slut</label>
+      <input type="date" id="datum2" name="datum2">
+
+<p>
+      <label for="subject">Något annat vi borde veta?</label>
+      <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+
+      <input type="submit" value="Skicka">
+
+    </form>
+  </div>
+
+
+  <footer>
+    <p>Copyright&#169; all rights reserved (ej verklig).
+    <p>Support finns <a href=kontakta.html>här</a> eller kontakta oss med <a href="mailto:testadress@mail.com">DefectiveTowers@email.com</a></p>
+    <p>Brewer Str. 14, Oxford, England, UK</p>
+  </footer>
+</body>
+
+</html>
